@@ -49,7 +49,7 @@ render()
     return <div className='directory-menu'>
         {
             this.state.sections.map(section =>
-              <MenuItem title={section.title.toUpperCase()} key={section.key} imageurl={section.imageUrl} size={section.size}></MenuItem>)
+              <MenuItem title={section.title.toUpperCase()} key={section.key} imageurl={section.imageUrl} size={section.size} linkUrl={section.linkUrl}></MenuItem>)
         }
     </div>
 }
